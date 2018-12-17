@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Conversion task</title>
+</head>
+<body>
+    <div>
+        <input type = number id ="amount">
+        <select id="from">
+            <option value = "VND">Viet Nam (VND)</option>
+            <option value = "USD">USD (USD)</option>
+        </select>
+        <select id ="to">
+            <option value = "VND">Viet Nam (VND)</option>
+            <option value = "USD">USD (USD)</option>
+        </select>
+        <button type ="button" onclick="show();">convert</button>
+    </div>
+    <script>
+        function show(){
+            console.log('111');
+            var amount = document.getElementById('amount').value;
+            console.log(amount);
+            var from = document.getElementById('from').value;
+            console.log(from);
+            var to = document.getElementById('to').value;
+            console.log(to);
+
+            if(from === 'VND' && to === 'USD'){
+                var outPut = (amount/23000);
+                alert(outPut);
+            }else if (from === 'USD' && to === 'VND'){
+
+                var ouPut = (amount * 23000);
+                alert(ouPut);
+
+            }
+        }
+    </script>
+
+
+</body>
+</html>

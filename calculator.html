@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div>
+        <input type="number" id="firstNum">
+        <input type="number" id="secondNum"><br>
+        <button type="button" onclick="Addition();">Addition(+)</button>
+        <button type="button" onclick="Subtraction();">Subtraction(-)</button>
+        <button type="button" onclick="Multiplication();">Multiplication(X)</button>
+        <button type="button" onclick="Division();">Division(/)</button>
+    </div>
+    <script>
+
+        function Addition(){
+            var firstNum = parseInt(document.getElementById('firstNum').value);
+            var  secondNum = parseInt(document.getElementById('secondNum').value);
+
+            var outPut = (firstNum + secondNum);
+            alert(outPut);
+        }
+        function Subtraction(){
+            var firstNum = parseInt(document.getElementById('firstNum').value);
+            var  secondNum = parseInt(document.getElementById('secondNum').value);
+
+            var outPut = (firstNum - secondNum);
+            alert(outPut);
+        }
+        function Multiplication(){
+            var firstNum = parseInt(document.getElementById('firstNum').value);
+            var  secondNum = parseInt(document.getElementById('secondNum').value);
+
+            var outPut = (firstNum * secondNum);
+            alert(outPut);
+        }
+        function Division(){
+            var firstNum = parseInt(document.getElementById('firstNum').value);
+            var  secondNum = parseInt(document.getElementById('secondNum').value);
+
+            var outPut = (firstNum / secondNum);
+            alert(outPut);
+        }
+    </script>
+</body>
+</html>
